@@ -1,0 +1,4 @@
+/* logo */
+.icon {
+    @apply text-indigo-700 dark:text-white
+}

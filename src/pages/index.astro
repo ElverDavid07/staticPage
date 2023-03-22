@@ -1,0 +1,20 @@
+---
+import Beneficios from "@components/Beneficios";
+import Card from "@components/Card";
+import Footer from "@components/Footer";
+import Header from "@components/Header";
+import Navbar from "@components/Navbar";
+import Opiniones from "@components/Opiniones";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="🚀Abundancia y libertad financiera">
+  <Navbar client:load/>
+  <main class="lg:mx-16 md:mx-10 mx-4">
+    <Header />
+    <Beneficios />
+	<Card client:load/>
+  <Opiniones/>
+</main>
+<Footer/>
+</Layout>
