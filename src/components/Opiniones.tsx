@@ -8,7 +8,7 @@ const Opiniones = () => {
       </h2>
       <section className=" flex gap-y-10 flex-col">
         {opiniones.map(({ comentario, nombre }, i) => (
-          <h2 className="flex-col flex gap-y-2 border rounded border-gray-300 px-2 py-5 bg-white">
+          <h2 key={i} className="flex-col flex gap-y-2 border rounded border-gray-300 px-2 py-5 bg-white">
             {nombre}{" "}
             <span className="font-openSans text-gray-800">{comentario} </span>
           </h2>
