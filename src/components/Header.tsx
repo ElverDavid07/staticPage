@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <div className=" flex justify-center mt-10">
         <iframe
-        className="aspect-video w-full"
+          className="aspect-video w-full"
           width="1000"
           height="415"
           src="https://www.youtube.com/embed/sOXW0ZnJxbQ"

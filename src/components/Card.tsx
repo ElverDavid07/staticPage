@@ -1,12 +1,7 @@
 import { card } from "../utils/profile";
-import { FiCheckCircle } from "react-icons/fi";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-} from "@material-tailwind/react";
+import { FiCheckCircle } from "react-icons/fi/index.js";
+import materialTailwind from "@material-tailwind/react";
+const { Card, CardHeader, CardBody, CardFooter, Button } = materialTailwind;
 const Card1 = () => {
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  lg:gap-x-5 md:gap-5 gap-y-5 mt-24">
@@ -43,7 +38,12 @@ const Card1 = () => {
               </h2>
             </CardHeader>
             <CardBody>
-              <img src={imagen} alt={descripcion} width={"310"} height={"168"} />
+              <img
+                src={imagen}
+                alt={descripcion}
+                width={"310"}
+                height={"168"}
+              />
               <h2 className="font-semibold text-center py-8 text-white text-xl">
                 {descripcion}{" "}
               </h2>
@@ -64,7 +64,14 @@ const Card1 = () => {
             </CardBody>
 
             <CardFooter>
-              <Button fullWidth ripple={false} color="white" className="text-blue-500 hover:scale-[1.02] active:scale-100 duration-100 " >Comprar ahora</Button>
+              <Button
+                fullWidth
+                ripple={false}
+                color="white"
+                className="text-blue-500 hover:scale-[1.02] active:scale-100 duration-100 "
+              >
+                Comprar ahora
+              </Button>
             </CardFooter>
           </Card>
         )

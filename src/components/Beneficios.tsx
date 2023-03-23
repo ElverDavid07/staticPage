@@ -1,4 +1,4 @@
-import { FcOk } from "react-icons/fc";
+import { FcOk } from "react-icons/fc/index.js";
 import { beneficios, parrafos } from "src/utils/profile";
 const Beneficios = () => {
   return (

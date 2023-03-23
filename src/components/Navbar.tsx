@@ -1,6 +1,7 @@
-import { RiDvdLine } from "react-icons/ri";
-import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
-import { IconButton, Tooltip } from "@material-tailwind/react";
+import { RiDvdLine } from "react-icons/ri/index.js";
+import { BsMoonStarsFill, BsSunFill } from "react-icons/bs/index.js";
+import materialTailwind from "@material-tailwind/react";
+const { IconButton, Tooltip } = materialTailwind;
 import { useState } from "react";
 const Navbar = () => {
   const [theme, setTheme] = useState(false);
